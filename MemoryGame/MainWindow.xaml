@@ -10,11 +10,15 @@
         <Style TargetType="Label">
             <Setter Property="FontFamily" Value="Webdings"/>
             <Setter Property="FontSize" Value="70"/>
+            <Setter Property="Foreground" Value="DeepSkyBlue"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
         </Style>
+        <Style TargetType="Grid">
+            <Setter Property="Background" Value="DeepSkyBlue"/>
+        </Style>
     </Window.Resources>
-    <Grid>
+    <Grid x:Name="grind">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -28,26 +32,23 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <Label Content="x" Name="l00"/>
-        <Label Content="x" Grid.Row="1" Name="l10"/>
-        <Label Content="x" Grid.Row="2" Name="l20" />
-        <Label Content="x" Grid.Row="3" Name="l30" />
-        <Label Content="x" Grid.Row="0" Grid.Column="1" Name="l01" />
-        <Label Content="x" Grid.Row="1" Grid.Column="1"  Name="l11" />
-        <Label Content="x" Grid.Row="2" Grid.Column="1" Name="l21" />
-        <Label Content="x" Grid.Row="3" Grid.Column="1" Name="l31" />
-        <Label Content="x" Grid.Row="0" Grid.Column="2" Name="l02" />
-        <Label Content="x" Grid.Row="1" Grid.Column="2" Name="l12" />
-        <Label Content="x" Grid.Row="2" Grid.Column="2" Name="l22" />
-        <Label Content="x" Grid.Row="3" Grid.Column="2" Name="l32" />
-        <Label Content="x" Grid.Row="0" Grid.Column="3" Name="l03" />
-        <Label Content="x" Grid.Row="1" Grid.Column="3" Name="l13" />
-        <Label Content="x" Grid.Row="2" Grid.Column="3" Name="l23" />
-        <Label Content="x" Grid.Row="3" Grid.Column="3" Name="l33" />
-
-
-
+        
+        <Label Content="x" Name="l00"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="1" Name="l10"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="2" Name="l20" MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1" />
+        <Label Content="x" Grid.Row="3" Name="l30"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="0" Grid.Column="1" Name="l01"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="1" Grid.Column="1"  Name="l11" MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1" />
+        <Label Content="x" Grid.Row="2" Grid.Column="1" Name="l21" MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1" />
+        <Label Content="x" Grid.Row="3" Grid.Column="1" Name="l31"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="0" Grid.Column="2" Name="l02"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="1" Grid.Column="2" Name="l12"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="2" Grid.Column="2" Name="l22"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="3" Grid.Column="2" Name="l32"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="0" Grid.Column="3" Name="l03"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="1" Grid.Column="3" Name="l13"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="2" Grid.Column="3" Name="l23"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="x" Grid.Row="3" Grid.Column="3" Name="l33"  MouseUp="ClickImage" BorderBrush="Black" BorderThickness="1"/>
     </Grid>
 
 </Window>
